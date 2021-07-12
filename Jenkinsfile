@@ -17,6 +17,7 @@ pipeline {
       steps {
         echo 'deploying the application...'
         echo 'test poll...'
+        echo 'test poll...'
       }
     }
   }
