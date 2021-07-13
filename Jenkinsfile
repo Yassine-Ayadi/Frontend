@@ -23,6 +23,7 @@ pipeline {
         echo 'test poll...'
         echo 'test poll...'
         echo 'test poll...'
+        echo 'test poll...'
       }
     }
   }
