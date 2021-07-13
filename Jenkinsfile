@@ -18,6 +18,7 @@ pipeline {
         echo 'deploying the application...'
         echo 'test poll...'
         echo 'test poll...'
+        echo 'test poll...'
       }
     }
   }
