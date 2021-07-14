@@ -4,6 +4,8 @@ pipeline {
     stage("build") {
       steps {
         echo 'building the application...'
+        sh 'npm install'
+        sh 'ng build --prod'
       }
     }
     
@@ -16,22 +18,6 @@ pipeline {
     stage("deploy") {
       steps {
         echo 'deploying the application...'
-        echo 'test poll...'
-        echo 'test poll...'
-        echo 'test poll...'
-        echo 'test poll...'
-        echo 'test poll...'
-        echo 'test poll...'
-        echo 'test poll...'
-        echo 'test poll...'
-        echo 'test poll...'
-        echo 'test poll...'
-        echo 'test poll...'
-        echo 'test poll...'
-        echo 'test poll...'
-        echo 'test poll...'
-        echo 'test poll...'
-        echo 'test poll...'
       }
     }
   }
