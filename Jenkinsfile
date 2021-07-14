@@ -4,6 +4,7 @@ pipeline {
     stage("build") {
       steps {
         echo 'building the application...'
+         echo 'building the application...'
         sh 'sudo npm install'
         sh 'sudo ng build --prod'
       }
