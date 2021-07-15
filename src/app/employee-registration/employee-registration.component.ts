@@ -2,10 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
-import { StudentService } from '../services/student.service';
-import { Student } from '../Models/student';
-import { UserService } from '../services/user.service';
-import { User } from '../Models/user';
+
 
 class ImageSnippet {
   constructor(public src: string, public file: File) {}
@@ -18,7 +15,7 @@ class ImageSnippet {
 })
 export class EmployeeRegistrationComponent implements OnInit {
   file:any=null;
-  constructor(private router:Router, private StudentService:StudentService, private userService:UserService) { }
+  constructor(private router:Router) { }
   selectedFile: ImageSnippet;
 
   fileName = '';
