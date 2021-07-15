@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'building the application...'
         echo 'building the application...'
-        bash 'ls'
+        sh 'ls'
         //bash 'sudo ng build --prod'
       }
     }
