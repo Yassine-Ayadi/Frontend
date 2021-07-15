@@ -75,7 +75,7 @@
             <input #imageInput required ngModel
                    type="file"
                    accept="image/*"
-                   (change)="processFile(imageInput)"
+                 
                   >
           </label>
           </div>
@@ -90,7 +90,7 @@
             <br>
 		<div class="form-group">
             
-            <button type="submit" [disabled]="!form.valid" class="btn btn-primary btn-block btn-lg" (click)="onSubmit(form)">Sign Up</button>
+            <button type="submit" [disabled]="!form.valid" class="btn btn-primary btn-block btn-lg" >Sign Up</button>
         </div>
     </div>
     </div>
