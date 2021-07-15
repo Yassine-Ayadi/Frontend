@@ -15,7 +15,7 @@ export class StudentSignInComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit( loginForm: NgForm){
+  /*onSubmit( loginForm: NgForm){
 
     this.authService.login(loginForm.value).subscribe(
       (data) => {
@@ -25,6 +25,6 @@ export class StudentSignInComponent implements OnInit {
 
       (erreur) => alert("Veuillez vérifier vos coordonnées")
     )
-  }
+  }*/
 
 }
