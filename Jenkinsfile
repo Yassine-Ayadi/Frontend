@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    docker {
-            image 'node:6-alpine'
-            args '-p 3000:3000'
-        }
-  }
+  agent any
   stages {
     stage("build") {
       steps {
@@ -12,7 +7,9 @@ pipeline {
         echo 'building the application...'
         echo 'building the application...'
         echo 'building the application...'
-        sh 'npm install'
+         nodejs(nodeJSInstallationName: 'Node 6.x', configId: '<config-file-provider-id>') {
+         sh 'npm config ls'
+         sh 'npm install'
         //bash 'sudo ng build --prod'
       }
     }
