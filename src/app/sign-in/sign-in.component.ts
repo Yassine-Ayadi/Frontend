@@ -14,7 +14,7 @@ export class SignInComponent implements OnInit {
   ngOnInit(): void {
   }
 
- onSubmit( loginForm: NgForm){
+/* onSubmit( loginForm: NgForm){
     this.authService.login(loginForm.value).subscribe(
       (data) => {
         localStorage.setItem('access_token', data['id']);
@@ -22,6 +22,6 @@ export class SignInComponent implements OnInit {
       },
       (erreur) => alert("Veuillez vérifier vos coordonnées")
     )
-  }
+  }*/
 
 }
