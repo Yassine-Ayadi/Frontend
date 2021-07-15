@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
-import { CompanyService } from '../services/company.service';
-import { Company } from '../Models/company';
 
 @Component({
   selector: 'app-company-registration',
@@ -13,7 +11,7 @@ import { Company } from '../Models/company';
 export class CompanyRegistrationComponent implements OnInit {
   i=0;
   company:Company=null;
-  constructor(private router:Router,private CompanyService:CompanyService ) { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
