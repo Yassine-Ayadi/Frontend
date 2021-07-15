@@ -6,6 +6,7 @@ pipeline {
         echo 'building the application...'
         echo 'building the application...'
         echo 'building the application...'
+        echo 'building the application...'
         sh 'npm install'
         //bash 'sudo ng build --prod'
       }
