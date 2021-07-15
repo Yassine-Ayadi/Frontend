@@ -19,16 +19,15 @@ pipeline {
     stage("test") {
       steps {
         echo 'testing the application...'
-        echo 'testing the application...'
-        echo 'testing the application...'
+
       }
     }
     
     stage("deploy") {
       steps {
         echo 'deploying the application...'
-        echo 'deploying the application...'
-        echo 'deploying the application...'
+        sh 'docker build -t angularproject:latest .'
+
       }
     }
   }
