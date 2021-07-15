@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AuthServiceService } from '../services/auth-service.service';
 
 
 @Component({
@@ -11,7 +10,7 @@ import { AuthServiceService } from '../services/auth-service.service';
 })
 export class StudentSignInComponent implements OnInit {
 
-  constructor(private router: Router,private authService:AuthServiceService) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
