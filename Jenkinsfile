@@ -5,8 +5,8 @@ pipeline {
       steps {
         echo 'building the application...'
         echo 'building the application...'
-        bash 'sudo npm install'
-        bash 'sudo ng build --prod'
+        bash 'ls'
+        //bash 'sudo ng build --prod'
       }
     }
     
