@@ -21,14 +21,14 @@ export class EmployeeRegistrationComponent implements OnInit {
   fileName = '';
   fileCV:any=null;
 
-  student:Student=null;
-  user:User=null;
+  //student:Student=null;
+  //user:User=null;
 
 
   ngOnInit(): void {
   }
 
-  processFile(imageInput: any) {
+  /*processFile(imageInput: any) {
     this.file = imageInput.files[0];
     const reader = new FileReader();
 
@@ -72,7 +72,7 @@ export class EmployeeRegistrationComponent implements OnInit {
         },
         (erreur) => alert("Veuillez réessayer votre enregistrement")
       )
-    }
+    }*/
 
 
 }
