@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+  agent {
+    docker {
+            image 'node:6-alpine'
+            args '-p 3000:3000'
+        }
+  }
   stages {
     stage("build") {
       steps {
@@ -7,7 +12,7 @@ pipeline {
         echo 'building the application...'
         echo 'building the application...'
         echo 'building the application...'
-        //sh 'npm install'
+        sh 'npm install'
         //bash 'sudo ng build --prod'
       }
     }
