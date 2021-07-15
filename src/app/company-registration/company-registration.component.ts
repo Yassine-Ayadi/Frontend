@@ -10,14 +10,14 @@ import { FormsModule } from '@angular/forms';
 })
 export class CompanyRegistrationComponent implements OnInit {
   i=0;
-  company:Company=null;
+  //company:Company=null;
   constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
 
 
-  onSubmit( loginForm: NgForm){
+  /*onSubmit( loginForm: NgForm){
     this.company=new Company(this.i,loginForm.value.username,loginForm.value.Address,loginForm.value.website,loginForm.value.tel,loginForm.value.email);
     this.i=this.i+1; 
     console.log(this.company);
@@ -28,6 +28,6 @@ export class CompanyRegistrationComponent implements OnInit {
       },
       (erreur) => alert("Veuillez réessayer votre enregistrement")
     )
-  }
+  }*/
 
 }
