@@ -15,7 +15,7 @@ export class CompanySignInComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit( loginForm: NgForm){
+ /* onSubmit( loginForm: NgForm){
     this.authService.login(loginForm.value).subscribe(
       (data) => {
         localStorage.setItem('token', data['id']);
@@ -23,6 +23,6 @@ export class CompanySignInComponent implements OnInit {
       },
       (erreur) => alert("Veuillez vérifier vos coordonnées")
     )
-  }
+  }*/
 
 }
