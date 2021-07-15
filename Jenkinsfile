@@ -11,7 +11,7 @@ pipeline {
         echo 'building the application...'
      
          sh 'npm install'
-         sh 'ng build --prod'
+         sh 'npm run ng build --prod'
         
       }
     }
