@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Student } from '../model/student';
-import { StudentService } from '../services/student.service';
+
 import { ActivatedRoute } from '@angular/router';
-import { JobApplication } from '../model/jobApplication';
+
 
 @Component({
   selector: 'app-profile',
@@ -23,7 +22,7 @@ export class ProfileComponent implements OnInit {
 
   fileName = '';
 
-  constructor(private studentService: StudentService, private ActivatedRoute:ActivatedRoute) { }
+  constructor(private ActivatedRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
       this.ActivatedRoute.params.subscribe((params) => this.studentService.getApplicationsByStudentId(+params.id).subscribe(
