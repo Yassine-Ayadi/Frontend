@@ -11,7 +11,7 @@ pipeline {
         echo 'building the application...'
      
          sh 'npm install'
-         sh 'rm -rf ./dist
+         sh 'rm -rf ./dist'
          sh 'npm run ng build --prod'
         
       }
