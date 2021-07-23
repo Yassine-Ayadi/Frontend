@@ -6,9 +6,6 @@ import { StudentService } from '../services/student.service';
 import { Student } from '../Models/student';
 
 
-class ImageSnippet {
-  constructor(public src: string, public file: File) {}
-}
 
 @Component({
   selector: 'app-employee-registration',
