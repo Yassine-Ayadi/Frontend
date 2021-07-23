@@ -4,8 +4,7 @@ import { NgForm } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { StudentService } from '../services/student.service';
 import { Student } from '../Models/student';
-import { UserService } from '../services/user.service';
-import { User } from '../Models/user';
+
 
 class ImageSnippet {
   constructor(public src: string, public file: File) {}
