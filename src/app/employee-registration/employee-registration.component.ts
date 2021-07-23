@@ -17,7 +17,7 @@ class ImageSnippet {
 })
 export class EmployeeRegistrationComponent implements OnInit {
 
-  constructor(private router:Router, private StudentService:StudentService, private userService:UserService) { }
+  constructor(private router:Router, private StudentService:StudentService) { }
 
 
   ngOnInit(): void {
