@@ -33,7 +33,7 @@ export class StudentService {
 
 
 
-  public deleteCV(id: number): Observable<any> {
+  /*public deleteCV(id: number): Observable<any> {
 
     if (id === null || id === undefined) {
         throw new Error('Required parameter id was null or undefined when calling deleteCV.');
@@ -208,6 +208,6 @@ export class StudentService {
             headers: headers,
         }
     );
-  }
+  }/*
 }
 
