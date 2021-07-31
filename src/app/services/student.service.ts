@@ -23,7 +23,7 @@ export class StudentService {
 
 
   public createStudentForm(loginForm: Student): Observable<Student> {
-      return this.httpClient.post<Student>('http://localhost:3000/student',loginForm, httpOptions)
+      return this.httpClient.post<Student>('http://localhost:8086/student',loginForm, httpOptions)
   }
 
 
