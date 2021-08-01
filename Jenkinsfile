@@ -9,7 +9,7 @@ pipeline {
     stage("build") {
       steps {
         echo 'building the application...'
-     
+         sh 'rm -rf node_modules'
          sh 'npm install'
          sh 'rm -rf ./dist'
          sh 'npm run ng build --prod'
