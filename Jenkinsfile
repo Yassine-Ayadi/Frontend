@@ -23,7 +23,7 @@ pipeline {
         scannerHome = tool 'sonarqube'
     }
     agent{ docker { image 'openjdk'}  }
-      tools{ nodejs 'myNodeJS'} }
+      tools{ nodejs 'myNodeJS'} 
 
     steps {
         withSonarQubeEnv('sonarqube') {
