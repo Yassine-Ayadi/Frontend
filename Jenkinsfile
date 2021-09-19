@@ -17,12 +17,22 @@ pipeline {
       }
     }
     
-    stage("test") {
-      steps {
-        echo 'testing the application...'
-
-      }
+  stage('Sonarqube') {
+    environment {
+        CI = 'true'
+        scannerHome = tool 'sonarqube'
     }
+    agent{ docker { image 'openjdk'}  }
+
+    steps {
+        withSonarQubeEnv('sonarqube') {
+            sh "${scannerHome}/bin/sonar-scanner"
+        }
+        timeout(time: 10, unit: 'MINUTES') {
+            waitForQualityGate abortPipeline: true
+        }
+    }
+}
     
     stage("deploy") {
       steps {
