@@ -1,0 +1,38 @@
+pipeline {
+    agent {
+        docker {
+            image 'node:latest' 
+            args '-p 3038:3000' 
+        }
+    }
+  stages {
+    stage("build") {
+      steps {
+        echo 'building the application...'
+         sh 'rm -rf node_modules'
+         sh 'npm install'
+         sh 'rm -rf ./dist'
+         sh 'npm run ng build --prod'
+        
+      }
+    }
+    
+    stage("test") {
+      steps {
+        echo 'testing the application...'
+        
+        
+  
+
+      }
+    }
+    
+    stage("deploy") {
+      steps {
+        echo 'deploying the application...'
+        sh 'docker build -t angularproject:latest .'
+
+      }
+    }
+  }
+}
